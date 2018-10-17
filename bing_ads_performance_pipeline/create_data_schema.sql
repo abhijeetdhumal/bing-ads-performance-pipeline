@@ -1,0 +1,3 @@
+DROP SCHEMA IF EXISTS ba_data CASCADE;
+
+CREATE SCHEMA ba_data;
