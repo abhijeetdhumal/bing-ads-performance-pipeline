@@ -41,7 +41,7 @@ pipeline.add(
         description="Loads the ad performance csv file set",
         file_pattern="*/*/*/bing/ad_performance_{}.csv.gz".format(config.input_file_version()),
         read_mode=ReadMode.ONLY_CHANGED,
-        compression=Compression.GZIP,
+        compression=Compression.ZIP,
         mapper_script_file_name="read_csv.py",
         target_table="ba_data.ad_performance_upsert",
         delimiter_char="\t", null_value_string='""',
